@@ -8,6 +8,10 @@ f = 0 .. 360
 k = r / f = 255 / 360
 
 r(f) = 255 / 360 f
+
+r(0) = 0 -> b = 0
+r(360) = 255 = k * 360
+k = 255 / 360
 ```
 
 r = 0 .. 255
@@ -80,17 +84,26 @@ k = (r - 255) / 255
 
 
 ```
-scaleMin = n
-scaleMax = m
-n - 0
-m - 360
+valueMin = n
+valueMax = m
 
 f = kl + b
-n = b
-m = 360k + n
 
-b = n
-k = (m - n) / 360
+n -> aMin
+m -> aMax
+
+f(n) = aMin = kn + b
+b = aMin - kn
+f(m) = aMax = km + aMin - kn
+k = (aMax - aMin) / (m - n)
+b = aMin - (aMax - aMin) * n / (m - n)
+
+r(a) = ka + b
+n -> rMin
+m -> rMax
+k = (rMax - rMin) / (m - n)
+b = rMin - (rMax - rMin) * n / (m - n)
+
 ```
 
 
