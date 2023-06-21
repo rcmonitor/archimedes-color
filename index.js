@@ -117,7 +117,7 @@ export class Archimedes {
 		let flPhi = this.getPhi(safeValue)
 		let flR = this.getR(flPhi, safeValue)
 
-		console.debug(`dot on an Archimedes spiral corresponding to value ${flValue} is at ${flPhi} angle, ${flR} radius`)
+		console.debug(`Archimedes spiral for value ${flValue} is at ${flPhi} angle, ${flR} radius`)
 
 		let strRed = Archimedes.ToHexString(this.red.MGetLevel(flPhi, flR))
 		let strGreen = Archimedes.ToHexString(this.green.MGetLevel(flPhi, flR))

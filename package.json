@@ -23,7 +23,7 @@
     "url": "https://github.com/rcmonitor/archimedes-color/issues"
   },
   "homepage": "https://github.com/rcmonitor/archimedes-color#readme",
-  "dependencies": {
+  "devDependencies": {
     "cli-interact": "^0.1.9"
   }
 }

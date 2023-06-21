@@ -1,5 +1,5 @@
 import index from "cli-interact";
-import {Archimedes, ArchimedesConfig, A_CH_RED, A_CH_BLUE} from "./index.js";
+import {Archimedes, ArchimedesConfig, A_CH_RED, A_CH_BLUE} from "../index.js";
 const run = () => {
 	ArchimedesConfig.aMax = A_CH_RED.angle
 	// blue-green
