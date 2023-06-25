@@ -1,6 +1,6 @@
 {
   "name": "archimedes-color",
-  "version": "1.2.0",
+  "version": "1.3.0",
   "description": "converts single value out of scale into RGB color based on RGB color wheel and Archimedes spiral",
   "main": "index.js",
   "type": "module",
