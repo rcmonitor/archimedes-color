@@ -106,5 +106,3 @@ b = rMin - (rMax - rMin) * n / (m - n)
 
 ```
 
-
-
